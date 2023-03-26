@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+// MARK: - IBOutlets
     @IBOutlet weak var viewRGB: UIView!
     
     @IBOutlet weak var redSlider: UISlider!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         updateColor()
     }
     
-    
+// MARK: - Private Methods
     private func setValue() {
         labelRedView.text = redSlider.value.formatted(.number.precision(.fractionLength(2)))
         labelGreenView.text = greenSlider.value.formatted(.number.precision(.fractionLength(2)))
